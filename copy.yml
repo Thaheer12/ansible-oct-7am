@@ -1,0 +1,9 @@
+---
+#ansible-playbook for copy
+ - hosts: all
+   become: true
+   tasks:
+     - name: copy file to remote host
+       copy:
+         src: /home/stackstorm/playbooks/ansible_test
+         dest: /home/goadmin
