@@ -1,5 +1,5 @@
 ---
-- hosts: server2
+- hosts: 10.49.99.4
   become: True
   tasks:
     - name: Installing Java-1.8.0
