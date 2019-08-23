@@ -1,0 +1,17 @@
+---
+ - hosts: 10.49.99.4
+   tasks:
+     - name: check the stats of the directory ‘/hello’
+       file:
+            path=”/hello?
+       register: hello_dir
+
+     - name: Remove dir
+       shell: rm -rf /hello
+       when: hello_dir.stat.isdir is defined and hello_dir.stat_isdir
+
+     - name: Create dir
+       file:
+            path=”/hello”
+            state=directory
+       when: hello_dir.stat.isdir is not defined
