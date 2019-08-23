@@ -6,4 +6,4 @@
      - name: copy file to remote host
        copy:
          src: /home/stackstorm/playbooks/ansible_test
-         dest: /home/goadmin
+         dest: /home/stackstorm
