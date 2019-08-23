@@ -3,7 +3,7 @@
    tasks:
      - name: check the stats of the directory ‘/hello’
        file:
-            path=”/hello?
+            path=”/home/stackstorm/hello"
        register: hello_dir
 
      - name: Remove dir
@@ -12,6 +12,6 @@
 
      - name: Create dir
        file:
-            path=”/hello”
+            path=”/home/stackstorm/hello”
             state=directory
        when: hello_dir.stat.isdir is not defined
