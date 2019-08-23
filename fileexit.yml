@@ -3,7 +3,7 @@
    tasks:
      - name: check the stats of the directory ‘/hello’
        file:
-            path=”/home/stackstorm/hello"
+            path=”/home/stackstorm/hello?
        register: hello_dir
 
      - name: Remove dir
