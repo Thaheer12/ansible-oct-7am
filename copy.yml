@@ -5,6 +5,11 @@
    tasks:
      - name: copy file to remote host
        copy:
+<<<<<<< HEAD
    #      src: /home/stackstorm/playbooks/ansible_test
          src: https://github.com/Thaheer12/ansible-oct-7am
+=======
+         src: /home/stackstorm/playbooks/ansible_test
+    #     src: https://github.com/Thaheer12/ansible-oct-7am/blob/master/ansible_test
+>>>>>>> 405d836ba9145b8f4f5ed15e70e61848d8f9689b
          dest: /home/stackstorm
